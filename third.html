@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+  <html>
+    <body>
+      <style>
+        div ol {
+          color: purple;
+        }
+      </style>
+
+      <style>
+        div > p {color: red;
+        }
+      </style>
+
+      <style>
+        div + p {
+          color: blue;
+        }
+      </style>
+
+      <style>
+        div ~ ul {
+          color: orange;
+        }
+      </style>
+
+      <style>
+        Li em {color: pink}
+      </style>
+
+  leave this text as the default black
+
+  <div>
+      <ol type='1'>
+        <li>make the text for list items 1 & 2 purple using a descendant selector</li>
+        <br />
+        <li>make the text for list items 1 & 2 purple using a descendant selector</li>
+  </div>
+
+  <div>
+    <p>make this text red using a child selector</p>
+  </div>
+
+
+    <p>make this text blue using an adjacent selector</p>
+
+    <p>
+        <ul style="list-style-type:disc">
+          <li>
+            make this text orange using a general sibling selector;
+            <em>and this phrase pink by combining 2 types of selectors</em>
+          </li>
+        </ul>
+    </p>
